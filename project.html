@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="Font-Awesome-6.x/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 class="display-3 text-primary sai allign-items-center justify-content-center heading"><img class="img" src="logo.png" alt="">yoursets</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">yoursets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="project.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showText()">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="dropdown">
+        <button class="dropbtn">models</button>
+        <div class="dropdown-content">
+            <a id="iris" href="#" onclick="iris()">iris dataset</a>
+            <a id="digits" href="#" onclick="digits()">written Digit dataset</a>
+            <a id="wine" href="#" onclick="wine()">wine datasets for logistic regression</a>
+            <a id="news" href="#" onclick="news()">20 different news for classification</a>
+            <a id="diabates" href="#" onclick="diabates()">diabates dataset for regression</a>
+            <a id="house" href="#" onclick="house()">house price prediction</a>
+            <a id="face" href="#" onclick="face()">face recognization dataset</a>
+            <a id="forest" href="#" onclick="forest()">classification for forest cover dataset</a>
+            <a id="network" href="#" onclick="network()">network intrusion dataset</a>
+            <a id="circle" href="#" onclick="circle()">circle for non dataset</a>
+        </div>
+    </div>
+<div class="container row">
+<div class="col-md-3 item datasets">
+    hi
+</div>
+<div class="col-md-3 item links">
+    hi
+</div>
+<div class="col-md-3 item first_item sklearn">
+    hi
+</div>
+</div>
+    <script src="project.js"></script>
+</body>
+</html>

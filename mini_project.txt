@@ -1,0 +1,144 @@
+1.iris data sets 
+use:-The Iris dataset is one of the most iconic datasets in the field of machine learning and statistics.
+ It has been used for decades to illustrate a variety of concepts and techniques.
+  Here are some common uses of the Iris dataset:
+
+2.digits datasets
+use:-the digits data sets used for the hand writing recognization it 
+contains the 8*8 hand writted images
+
+3.wine datasets
+use:-it contains the propertiess of tthe wine mainly used for the logistic regression
+
+4.20 Newsgroups Dataset (fetch_20newsgroups)
+use:-the 20 Newsgroups datset is used for classification i has 20 types which helps 
+for unsupervised learning
+
+5.Diabetes Dataset (load_diabetes)
+use:-A regression dataset focused on predicting disease progression based on physiological measurements.
+
+6.Boston Housing Dataset (load_boston)
+use:-A historical regression dataset for predicting housing prices 
+(note: its use is now discouraged due to ethical concerns, but it remains famous).
+
+7.Olivetti Faces Dataset (fetch_olivetti_faces)
+use:-Contains face images used for tasks like facial recognition and clustering
+
+8.Covtype Dataset (fetch_covtype)
+use:-A large-scale classification dataset aimed at predicting forest cover type from cartographic variables.
+
+9.fetch_kddcup99
+use:-Provides the KDD Cup 1999 dataset, which is popular in network intrusion detection research
+
+10.make_circles
+use:-A synthetic dataset generator that creates circular data patterns, useful for demonstrating non‑linear classification.
+
+
+links
+1=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/1.csv
+
+1.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/1.5.csv
+
+2=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/2.csv
+
+2.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/2.5.csv
+
+3=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/3.csv
+
+3.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/3.5.csv
+
+4=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/4.csv
+
+4.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/4.5.csv
+
+5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/5.csv
+
+5.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/5.5.csv
+
+6=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/6.csv
+
+6.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/6.5.csv
+
+7=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/7.csv
+
+7.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/7.5.csv
+
+8=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/8.csv
+
+8.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/8.5.csv
+
+9=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/9.csv
+
+9.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/9.5.csv
+
+10=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/10.csv
+
+10.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/10.5.csv
+
+program
+
+
+import pandas as pd
+url = "https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/1.csv"
+df = pd.read_csv(url)
+print(df.head())
+
+sklearn predefined sets
+
+from sklearn import datasets
+import matplotlib.pyplot as plt
+import numpy as np
+
+# 1. Load Iris dataset
+iris = datasets.load_iris()
+print("Iris Dataset:", iris.keys())
+
+# 2. Load Digits dataset
+digits = datasets.load_digits()
+print("Digits Dataset shape:", digits.data.shape)
+plt.imshow(digits.images[0], cmap='gray')
+plt.title("Sample Digit Image")
+plt.show()
+
+# 3. Load Wine dataset
+wine = datasets.load_wine()
+print("Wine Dataset:", wine.keys())
+
+# 4. Load 20 Newsgroups dataset
+from sklearn.datasets import fetch_20newsgroups
+newsgroups = fetch_20newsgroups(subset='train')
+print("20 Newsgroups Categories:", newsgroups.target_names[:5])
+
+# 5. Load Diabetes dataset
+diabetes = datasets.load_diabetes()
+print("Diabetes Dataset shape:", diabetes.data.shape)
+
+# 6. Load Boston Housing dataset (Deprecated in newer versions)
+# from sklearn.datasets import load_boston
+# boston = load_boston()
+# print("Boston Housing Dataset shape:", boston.data.shape)
+
+# 7. Load Olivetti Faces dataset
+from sklearn.datasets import fetch_olivetti_faces
+faces = fetch_olivetti_faces()
+print("Olivetti Faces Dataset shape:", faces.images.shape)
+plt.imshow(faces.images[0], cmap='gray')
+plt.title("Sample Face Image")
+plt.show()
+
+# 8. Load Covtype dataset
+from sklearn.datasets import fetch_covtype
+covtype = fetch_covtype()
+print("Covtype Dataset shape:", covtype.data.shape)
+
+# 9. Load KDD Cup 99 dataset
+from sklearn.datasets import fetch_kddcup99
+kddcup99 = fetch_kddcup99(subset='SA')
+print("KDD Cup 99 Dataset shape:", kddcup99.data.shape)
+
+# 10. Generate make_circles synthetic dataset
+from sklearn.datasets import make_circles
+X, y = make_circles(n_samples=100, noise=0.05, factor=0.5)
+plt.scatter(X[:, 0], X[:, 1], c=y, cmap='bwr')
+plt.title("Make Circles Dataset")
+plt.show()
