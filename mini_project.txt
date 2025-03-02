@@ -35,45 +35,45 @@ use:-A synthetic dataset generator that creates circular data patterns, useful f
 
 
 links
-1=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/1.csv
+1=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/1.csv
 
-1.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/1.5.csv
+1.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/1.5.csv
 
-2=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/2.csv
+2=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/2.csv
 
-2.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/2.5.csv
+2.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/2.5.csv
 
-3=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/3.csv
+3=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/3.csv
 
-3.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/3.5.csv
+3.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/3.5.csv
 
-4=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/4.csv
+4=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/4.csv
 
-4.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/4.5.csv
+4.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/4.5.csv
 
-5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/5.csv
+5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/5.csv
 
-5.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/5.5.csv
+5.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/5.5.csv
 
-6=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/6.csv
+6=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/6.csv
 
-6.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/6.5.csv
+6.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/6.5.csv
 
-7=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/7.csv
+7=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/7.csv
 
-7.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/7.5.csv
+7.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/7.5.csv
 
-8=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/8.csv
+8=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/8.csv
 
-8.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/8.5.csv
+8.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/8.5.csv
 
-9=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/9.csv
+9=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/9.csv
 
-9.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/9.5.csv
+9.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/9.5.csv
 
-10=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/10.csv
+10=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/10.csv
 
-10.5=https://raw.githubusercontent.com/SaiiTeja/datasets/refs/heads/main/10.5.csv
+10.5=https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/10.5.csv
 
 program
 
