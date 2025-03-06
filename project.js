@@ -1,11 +1,12 @@
 const datasets=["iris data sets ","digits datasets","wine datasets","20 Newsgroups Dataset","Diabetes Dataset",
     "Boston Housing Dataset ","Olivetti Faces Dataset","Covtype Dataset ","fetch_kddcup99","make_circles"]
-const program=["","","","","","","","","","","","",""]
+const program=[`
+from sklearn import datasets<br>import matplotlib.pyplot as plt<br>import numpy as np<br># 1. Load Iris dataset<br>iris = datasets.load_iris()<br>print("Iris Dataset:", iris.keys())`,"","","","","","","","","","","",""]
 window.onload = function () {
     document.querySelectorAll(".parent a").forEach(a => {
         const dataValue = a.getAttribute("data-value");
         a.addEventListener("click", function() {
-            load_datasets(datasets[dataValue-1], dataValue);
+            load_datasets(datasets[dataValue-1], dataValue,program[dataValue-1]);
             let head=document.getElementById("heading");
 head.innerHTML="python program using predefined modules";
         });
@@ -55,9 +56,9 @@ function copy2(num){
 }
 
 
-function load_datasets(name,value){
+function load_datasets(name,value,program){
     let url = document.getElementById("links");
-
+    let code=document.getElementById("code");
     let datasets=document.getElementById("datasets");
     datasets.innerHTML=`<h2><center>${name}</h2><br> <h3>1.file 1 <a href="datasets/${value}.csv" download class="fa fa-download text-dark"></a></h3>
         <h3>2.file 2 <a href="datasets/1.5.csv" download class="fa fa-download text-dark"></a></h3></center><p>${para}</p>
@@ -81,5 +82,8 @@ model=RandomForestClassifier()
 url = "https://raw.githubusercontent.com/SaiiTeja/mini_project/<br>refs/heads/master/datasets/1.csv"<br>
 df = pd.read_csv(url)<br>
 print(df.head())</p>`;
+
+    code.innerHTML=`${program}`
+    
 }
 
