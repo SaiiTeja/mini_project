@@ -1,12 +1,104 @@
 const datasets=["iris data sets ","digits datasets","wine datasets","20 Newsgroups Dataset","Diabetes Dataset",
     "Boston Housing Dataset ","Olivetti Faces Dataset","Covtype Dataset ","fetch_kddcup99","make_circles"]
-const program=[`
-from sklearn import datasets<br>import matplotlib.pyplot as plt<br>import numpy as np<br># 1. Load Iris dataset<br>iris = datasets.load_iris()<br>print("Iris Dataset:", iris.keys())`,"","","","","","","","","","","",""]
+let dictonary={
+    1:`from sklearn.datasets import load_iris <br>
+       iris = load_iris() <br>
+       X = iris.data <br>
+       y = iris.target <br>
+       print("Feature names:", iris.feature_names) <br>
+       print("Target names:", iris.target_names) <br>
+       print("First five rows of features:\n", X[:5]) <br>
+       print("First five labels:", y[:5])
+`,
+    2:`
+from sklearn.datasets import load_digits<br>
+digits = load_digits()<br>
+X = digits.data  <br>
+y = digits.target  <br>
+print("Number of features:", X.shape[1]) <br>
+print("Target classes:", digits.target_names)<br>
+print("First five rows of features:\n", X[:5])  <br>
+print("First five labels:", y[:5])
+`,
+3:`
+from sklearn.datasets import load_wine<br>
+wine = load_wine()<br>
+X = wine.data  <br>
+y = wine.target  <br>
+print("Feature names:", wine.feature_names)<br>
+print("Target names:", wine.target_names) <br>
+print("First five rows of features:\n", X[:5])  <br>
+print("First five labels:", y[:5])
+`,
+4:`
+from sklearn.datasets import fetch_20newsgroups<br>
+newsgroups = fetch_20newsgroups(subset='all', shuffle=True, random_state=42)<br>
+X = newsgroups.data  <br>
+y = newsgroups.target  <br>
+print("Target names (categories):", newsgroups.target_names)<br>
+print("Number of articles:", len(X))<br>
+print("First article (snippet):\n", X[0][:500]) <br>
+print("First article label (category):", newsgroups.target_names[y[0]])
+`,
+5:`
+from sklearn.datasets import load_diabetes<br>
+diabetes = load_diabetes()<br>
+X = diabetes.data<br>
+y = diabetes.target<br>
+print("Feature names:", diabetes.feature_names)<br>
+print("First five rows of features:\n", X[:5])<br>
+print("First five labels:", y[:5])
+`,
+6:`
+from sklearn.datasets import fetch_california_housing<br>
+housing = fetch_california_housing()<br>
+X = housing.data<br>
+y = housing.target<br>
+print("Feature names:", housing.feature_names)<br>
+print("First five rows of features:\n", X[:5])<br>
+print("First five target values (house prices):", y[:5])
+`,
+7:`
+from sklearn.datasets import fetch_olivetti_faces<br>
+faces = fetch_olivetti_faces()<br>
+X = faces.data<br>
+y = faces.target<br>
+print("Number of features:", X.shape[1])<br>
+print("Number of samples:", X.shape[0])<br>
+print("First five labels (person IDs):", y[:5])
+`,
+8:`
+from sklearn.datasets import fetch_covtype<br>
+forest = fetch_covtype()<br>
+X = forest.data<br>
+y = forest.target<br>
+print("Number of features:", X.shape[1])<br>
+print("Number of samples:", X.shape[0])<br>
+print("First five rows of features:\n", X[:5])<br>
+print("First five labels (Cover Types):", y[:5])
+`,
+9:`
+from sklearn.datasets import fetch_kddcup99<br>
+kdd = fetch_kddcup99()<br>
+X = kdd.data<br>
+y = kdd.target<br>
+print("Number of features:", X.shape[1])<br>
+print("Number of samples:", X.shape[0])<br>
+print("First five rows of features:\n", X[:5])<br>
+print("First five labels (attack types):", y[:5])<br>
+`,
+10:`
+from sklearn.datasets import make_circles<br>
+X, y = make_circles(n_samples=100, noise=0.05, random_state=42)<br>
+print("First five rows of features:\n", X[:5])<br>
+print("First five labels:", y[:5])<br>
+`
+}
 window.onload = function () {
     document.querySelectorAll(".parent a").forEach(a => {
         const dataValue = a.getAttribute("data-value");
         a.addEventListener("click", function() {
-            load_datasets(datasets[dataValue-1], dataValue,program[dataValue-1]);
+            load_datasets(datasets[dataValue-1], dataValue,dictonary[dataValue]);
             let head=document.getElementById("heading");
 head.innerHTML="python program using predefined modules";
         });
@@ -79,7 +171,7 @@ model=RandomForestClassifier()
     <br>mini_project/refs/heads/master/datasets/${value}.5.csv<br></a>
    <br> <h6>how to implement in python</h6>
     <p>import pandas as pd<br>  
-url = "https://raw.githubusercontent.com/SaiiTeja/mini_project/<br>refs/heads/master/datasets/1.csv"<br>
+url = "https://raw.githubusercontent.com/SaiiTeja/<br>mini_project/refs/heads/master/datasets/1.csv"<br>
 df = pd.read_csv(url)<br>
 print(df.head())</p>`;
 
