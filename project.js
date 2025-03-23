@@ -179,3 +179,55 @@ print(df.head())</p>`;
     
 }
 
+function toggleSideBox() {
+    const sideBox = document.getElementById('side-box');
+    if (sideBox.classList.contains('hidden')) {
+        sideBox.classList.remove('hidden');
+        setTimeout(() => sideBox.classList.add('active'), 0); // Activate transition
+    } else {
+        sideBox.classList.remove('active');
+        setTimeout(() => sideBox.classList.add('hidden'), 300); // Wait for transition before hiding
+    }
+}
+function closeSideBox() {
+    const sideBox = document.getElementById('side-box');
+    sideBox.classList.remove('active');
+    setTimeout(() => sideBox.classList.add('hidden'), 300);
+}
+
+async function sendmsg(){
+    const input=document.querySelector(".input").value;
+    let output=document.querySelector(".output");
+    if(!input)
+    {
+        output.innerHTML="please enter the prompt";
+        return;
+    }
+    output.innerHTML="Loading......";
+    try{
+        const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+            method: "POST",
+            headers: {
+              "Authorization": "Bearer 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",
+              "HTTP-Referer": "<YOUR_SITE_URL>", // Optional. Site URL for rankings on openrouter.ai.
+              "X-Title": "<YOUR_SITE_NAME>", // Optional. Site title for rankings on openrouter.ai.
+              "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+              "model": "deepseek/deepseek-r1-zero:free",
+              "messages": [
+                {
+                  role: "user",
+                  content:input
+                }
+              ]
+            })
+          });
+          const data = await response.json();
+          console.log(data);
+          const markdowntxt = data.choices?.[0]?.message?.content || "NO response received";
+          output.innerHTML = markdowntxt;
+    }catch(error){
+        output.innerHTML='Error'+error.message;
+    }
+}

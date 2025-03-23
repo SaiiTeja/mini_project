@@ -27,7 +27,7 @@
                         <a class="nav-link" href="#" onclick="showText()">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#" onclick="toggleSideBox()">AI box</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -64,6 +64,19 @@
     <div id="code"></div>
 </div>
 </div>
+<div class="container">
+    <div id="side-box" class="side-box hidden">
+        <button class="close-btnn" onclick="closeSideBox()">X</button>
+        <div class="output">
+            
+        </div>
+        <img src="logo.png" alt="Icon" class="box-image">
+        <input type="text" class="search-box input" placeholder="Search for the database you need">
+        <button class="submit btn btn-success" onclick="sendmsg()">Ask me</button>
+    </div>
+</div>
+
+
     <script src="project.js"></script>
 </body>
 </html>

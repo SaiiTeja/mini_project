@@ -4,7 +4,9 @@
     background-image: linear-gradient(black,blue);
     background-clip: content-box;
 }
-
+.img{
+display: inline;
+}
 .img{
     width: 3.5%;
     height: 3.5%;
@@ -105,3 +107,81 @@
         width: 300px;
         height: 300px;
       }
+      
+      .side-box {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100vh;
+        background-color: #f4f4f4;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* Align content to the bottom */
+        align-items: center; /* Center the input horizontally */
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(100%);
+    }
+    
+    .search-box {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    
+    .side-box.active {
+        transform: translateX(0); 
+      }
+    
+    .hidden {
+        display: none;
+    }
+    
+    .search-box {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        display: inline;
+    }
+    
+    
+    .box-image {
+        width: 50px; /* Adjust the size of the image as needed */
+        height: auto; /* Keep aspect ratio */
+        margin-bottom: 10px; /* Add space between the image and input box */
+    }
+    
+    .search-box {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+    .close-btnn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #e63946; /* A richer red for a modern look */
+        border: none;
+        color: #ffffff;
+        font-size: 18px; /* Slightly larger font for better visibility */
+        cursor: pointer;
+        padding: 8px 12px; /* More balanced padding */
+        border-radius: 50%; /* Fully rounded for a button-like feel */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Slightly stronger shadow for depth */
+        transition: background-color 0.3s ease, transform 0.2s ease; 
+    }
+    
+    .close-btnn:hover {
+        background-color: #d62828;
+        transform: scale(1.1); 
+    }
+    
+    .close-btnn:active {
+        background-color: #a4161a; 
+        transform: scale(0.95); 
+    }
+    
+    
