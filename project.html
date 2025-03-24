@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="project.css">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="Font-Awesome-6.x/css/all.min.css">
-
+   
     <title>Document</title>
 </head>
 <body>
@@ -67,16 +67,20 @@
 <div class="container">
     <div id="side-box" class="side-box hidden">
         <button class="close-btnn" onclick="closeSideBox()">X</button>
+        <p>
+        <img src="logo.png" alt="Icon" class="box-image"><span class="text-success display-6">AI bot</span></p>
+        <iframe
+        src="https://www.chatbase.co/chatbot-iframe/OfHarSvhYyHsL8w3C08UJ"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+    ></iframe>
         <div class="output">
             
         </div>
-        <img src="logo.png" alt="Icon" class="box-image">
-        <input type="text" class="search-box input" placeholder="Search for the database you need">
-        <button class="submit btn btn-success" onclick="sendmsg()">Ask me</button>
     </div>
 </div>
-
-
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="project.js"></script>
 </body>
 </html>

@@ -194,21 +194,83 @@ function closeSideBox() {
     sideBox.classList.remove('active');
     setTimeout(() => sideBox.classList.add('hidden'), 300);
 }
+/* 
+async function sendmsg() {
+    const input = document.querySelector(".input").value;
+    const output = document.querySelector(".output");
 
-async function sendmsg(){
-    const input=document.querySelector(".input").value;
-    let output=document.querySelector(".output");
-    if(!input)
-    {
-        output.innerHTML="please enter the prompt";
+    if (!input) {
+        output.innerHTML = "Please enter the prompt";
         return;
     }
-    output.innerHTML="Loading......";
-    try{
+
+    output.innerHTML = "Loading...";
+
+    try {
+        await fetchData(input, output);
+    } catch (error) {
+        console.error("Error in sendmsg:", error);
+        output.innerHTML = `<div style="color: red;">Error: ${error.message}</div>`;
+    }
+}
+
+const fetchWithTimeout = async (url, options, timeout = 10000) => {
+    const controller = new AbortController();
+    const signal = controller.signal;
+    options.signal = signal;
+
+    const timeoutId = setTimeout(() => controller.abort(), timeout);
+
+    try {
+        const response = await fetch(url, options);
+        clearTimeout(timeoutId);
+        return response;
+    } catch (error) {
+        clearTimeout(timeoutId);
+        throw new Error(`Request failed: ${error.message}`);
+    }
+};
+
+const fetchData = async (input, output) => {
+    try {
+        const response = await fetchWithTimeout("https://openrouter.ai/api/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Authorization": "Bearer YOUR_SECURE_API_KEY",
+                "HTTP-Referer": "https://your-website.com",
+                "X-Title": "Your Website Name",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                model: "deepseek/deepseek-r1-zero:free",
+                messages: [{ role: "user", content: input }],
+            }),
+        });
+
+        if (!response.ok) {
+            throw new Error(`Server error: ${response.status}`);
+        }
+
+        const text = await response.text();
+        console.log("Raw API Response:", text);
+        
+        const data = JSON.parse(text);
+        const markdownTxt = data.choices?.[0]?.message?.content || "No response received";
+        
+        output.innerHTML = markdownTxt; // Render plain text (use markdown library if needed)
+    } catch (error) {
+        console.error("Error fetching data:", error);
+        output.innerHTML = `<div style="color: red;">Error: ${error.message}</div>`;
+    }
+};
+
+
+   /*   try{
+        
         const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
             method: "POST",
             headers: {
-              "Authorization": "Bearer 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",
+              "Authorization": "Bearer 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", 
               "HTTP-Referer": "<YOUR_SITE_URL>", // Optional. Site URL for rankings on openrouter.ai.
               "X-Title": "<YOUR_SITE_NAME>", // Optional. Site title for rankings on openrouter.ai.
               "Content-Type": "application/json"
@@ -226,8 +288,9 @@ async function sendmsg(){
           const data = await response.json();
           console.log(data);
           const markdowntxt = data.choices?.[0]?.message?.content || "NO response received";
-          output.innerHTML = markdowntxt;
+          output.innerHTML = marked.parse(markdowntxt);
+          
     }catch(error){
         output.innerHTML='Error'+error.message;
     }
-}
+}*/
