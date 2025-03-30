@@ -194,6 +194,8 @@ function closeSideBox() {
     sideBox.classList.remove('active');
     setTimeout(() => sideBox.classList.add('hidden'), 300);
 }
+
+
 /* 
 async function sendmsg() {
     const input = document.querySelector(".input").value;
