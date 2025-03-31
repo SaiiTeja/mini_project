@@ -194,6 +194,7 @@ display: inline;
     justify-content: center; /* Center-aligns the cards */
     text-decoration: none;
     color: black;
+    padding-top: 2%;
 }
 
 /* Unique styles for cards */
@@ -207,7 +208,6 @@ display: inline;
     background-color: #fff;
     text-decoration: none; 
     color: black;
-    
 }
 
 .custom-card img {
