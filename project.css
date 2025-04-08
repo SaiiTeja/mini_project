@@ -271,7 +271,7 @@ p {
     
 }
 
-/* Table Styles */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -299,6 +299,7 @@ th {
 
 td {
     color: #555;
+    padding-left: 40px;
 }
 /* 
 .boxes{
