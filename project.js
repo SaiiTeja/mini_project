@@ -101,6 +101,15 @@ window.onload = function () {
             load_datasets(datasets[dataValue-1], dataValue,dictonary[dataValue]);
             let head=document.getElementById("heading");
 head.innerHTML="python program using predefined modules";
+            let box1=document.getElementById("datasets")
+            let box2=document.getElementById("links")
+            let box3=document.getElementById("boxes")
+            let box4=document.getElementById("main")
+
+            box1.classList.add("boxes"); 
+            box2.classList.add("boxes");
+            box3.classList.add("boxes");
+            box4.classList.add("boxes2");
         });
     });
 };
@@ -158,7 +167,7 @@ function load_datasets(name,value,program){
     <p>
 from sklearn.ensemble import RandomForestClassifier<br>
 import pandas as pd<br>
-df=pd.read_csv("C:/Users/nalla/OneDrive/Desktop/<br>ARSENAL/mini project/datasets/1.csv")<br>
+df=pd.read_csv("C:/Users/nalla/OneDrive<br>/Desktop/ARSENAL/mini project/datasets/1.csv")<br>
 print(df.head())
 
 model=RandomForestClassifier()
@@ -194,6 +203,7 @@ function closeSideBox() {
     sideBox.classList.remove('active');
     setTimeout(() => sideBox.classList.add('hidden'), 300);
 }
+
 
 
 /* 

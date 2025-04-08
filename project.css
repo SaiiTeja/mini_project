@@ -11,11 +11,15 @@ display: inline;
     width: 3.5%;
     height: 3.5%;
 }
+#boxes{
+    padding-left: 60px;
+}
 .dropdown {
             position: relative;
             display: inline-block;
             left: 30%;
             padding-top: 3%;
+            padding-bottom: 3%;
         }
 
         .dropbtn {
@@ -28,6 +32,7 @@ display: inline;
             border: none;
             cursor: pointer;
             min-width:500px ;
+            
         }
 
         .dropdown-content {
@@ -118,12 +123,12 @@ display: inline;
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
         padding: 20px;
         flex-direction: baseline;
-        justify-content: baseline; /* Align content to the bottom */
-        align-items: center; /* Center the input horizontally */
+        justify-content: baseline; 
+        align-items: center; 
         transition: transform 0.3s ease-in-out;
         transform: translateX(100%);
-        overflow: auto; /* Allow vertical and horizontal scrolling if needed */
-        resize: both; /* Enable resizing from bottom-right corner */
+        overflow: auto;
+        resize: both; 
     }
     
     
@@ -151,9 +156,9 @@ display: inline;
     
     
     .box-image {
-        width: 50px; /* Adjust the size of the image as needed */
-        height: auto; /* Keep aspect ratio */
-        margin-bottom: 10px; /* Add space between the image and input box */
+        width: 50px; 
+        height: auto; 
+        margin-bottom: 10px; 
     }
     
     .search-box {
@@ -186,20 +191,19 @@ display: inline;
         transform: scale(0.95); 
     }
     
-/* Unique styles for cards container */
 .custom-card-container {
     display: flex;
-    flex-wrap: wrap; /* Allows boxes to wrap to the next row */
-    gap: 20px; /* Spacing between the cards */
-    justify-content: center; /* Center-aligns the cards */
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
     text-decoration: none;
     color: black;
     padding-top: 2%;
 }
 
-/* Unique styles for cards */
+
 .custom-card {
-    width: 18%; /* Adjusted width for 5 cards per row */
+    width: 18%; 
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
@@ -212,7 +216,7 @@ display: inline;
 
 .custom-card img {
     width: 100%;
-    height: 100px; /* Fixed height for images */
+    height: 100px; 
 }
 
 .custom-card-title {
@@ -227,9 +231,9 @@ display: inline;
     font-size: 0.9em;
 }
 #main_anchpr {
-    all: unset; /* Resets all inherited and applied styles */
-    color: inherit; /* Ensures color matches the surrounding text */
-    text-decoration: none; /* Removes underline */
+    all: unset; 
+    color: inherit; 
+    text-decoration: none; 
     color: black;
 }
 
@@ -247,7 +251,86 @@ img{
     height: 5%;
 }
 
+.contact-container {
+    max-width: 800px;
+    margin: 200px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+p {
+    color: #555;
+    font-size: 1.1rem;
+    
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background-color: #2980b9;
+    color: #fff;
+}
+
+th, td {
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f4f4f4;
+}
+
+th {
+    font-weight: bold;
+}
+
+td {
+    color: #555;
+}
+/* 
+.boxes{
+    border: 4px solid #1abc9c; 
+    border-radius: 12px; 
+        padding: 20px;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3); 
+    transition: all 0.3s ease; 
+    height: 100%;
+    weight: 100%;
+}
 
 
+.boxes:hover {
+    border-color: #e67e22; 
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.4); 
+    transform: scale(1.08); 
+}
     
-    
+.boxes2{
+    border: 40px solid #1abc9c; 
+    border-radius: 12px; 
+    margin: auto;
+    box-shadow: 3px 6px 12px rgba(0, 0, 0, 0.3); 
+    height: 100%;
+    width: 100%;
+}
+
+
+.boxes2:hover {
+    border-color: #e67e22; 
+    box-shadow: 6px 10px 20px rgba(0, 0, 0, 0.4); 
+    transform: scale(1.08); 
+}
+ */
