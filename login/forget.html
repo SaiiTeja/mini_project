@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div id="questionSection" style="display: none;" class="form-group">
+                <label id="questionLabel"></label>
+                <input type="text" id="answer" placeholder="Enter your answer">
+            </div>
+            <div id="message"></div>
+            <button type="button" onclick="retrieveSecurityQuestion()">Retrieve Security Question</button>
+            <button type="button" onclick="recoverPassword()">Recover Password</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

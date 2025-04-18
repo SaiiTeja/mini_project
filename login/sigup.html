@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="navbar bg-dark text-white">
+        <a>Datavere</a>
+        <button id="button" class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="index.html" class="btn btn-dark">Home</a>
+            <a href="about.html" class="btn btn-dark">About</a>
+            <a href="contact.html" class="btn btn-dark">Contact</a>
+            <a href="services.html" class="btn btn-dark">Services</a>
+            <a href="products.html" class="btn btn-dark">Products</a>
+            <a href="blog.html" class="btn btn-dark">Blog</a>
+        </button>
+    </nav>
+    <span>
+        <div class="box">
+            <center><h2 id="heading2">Sign Up</h2></center>
+            <p id="message"></p>
+            <p>Username: <input type="text" placeholder="Enter your username" id="newUsername" size="30" class="sai"></p>
+            <p>Password: <input type="password" placeholder="Enter your password" id="newPassword" size="30"></p>
+            <p>
+                security question:- 
+                <select name="" id="question">
+
+                    <option value="first pet">what is your first pet name ?</option>
+                    <option value="favourite color">what is your favourite color ?</option>
+                    <option value="favourite food">what is your favourite food ?</option>
+                    <option value="favourite movie">what is your favourite movie ?</option>
+                    <option value="favourite anime">what is your favourite anime ?</option>
+                    
+                    
+                    
+
+                </select>
+            </p>
+            <p>Answer:- <input type="text" name="" id="answer"></p>
+            <center><button id="login" onclick="signup();"><h2>Sign Up</h2></button></center>
+        </div>
+    </span>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+.style{
+    color: red;
+}
+.style2{
+    color: #4caf50;
+}
+
+body {
+    background-image: url('photo.gif');
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+}
+
+nav.navbar {
+    padding: 1rem;
+}
+
+.navbar a {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.box {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 50px auto;
+    width: 40%;
+}
+
+h2#heading1 {
+    color: #333;
+}
+
+.sai {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#login {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#login:hover {
+    background-color: #45a049;
+}
+
+h5 a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+h5 a:hover {
+    text-decoration: underline;
+}
