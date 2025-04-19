@@ -94,6 +94,59 @@ print("First five rows of features:\n", X[:5])<br>
 print("First five labels:", y[:5])<br>
 `
 }
+let userName = localStorage.getItem("userName");
+let change_name = document.getElementById("user_name");
+change_name.innerHTML = userName;
+
+    if (userName) {
+        const welcomeMessageDiv = document.createElement("div");
+        welcomeMessageDiv.textContent = `Hello, ${userName}! Great to see you here 🎉`;
+        welcomeMessageDiv.style.position = "fixed";
+        welcomeMessageDiv.style.top = "20px";
+        welcomeMessageDiv.style.left = "50%";
+        welcomeMessageDiv.style.transform = "translateX(-50%)";
+        welcomeMessageDiv.style.padding = "10px 20px";
+        welcomeMessageDiv.style.backgroundColor = "#1abc9c";
+        welcomeMessageDiv.style.color = "#ffffff";
+        welcomeMessageDiv.style.fontSize = "18px";
+        welcomeMessageDiv.style.fontWeight = "bold";
+        welcomeMessageDiv.style.borderRadius = "8px";
+        welcomeMessageDiv.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+        welcomeMessageDiv.style.zIndex = "1000";
+        welcomeMessageDiv.style.textAlign = "center";
+        welcomeMessageDiv.style.display = "flex";
+        welcomeMessageDiv.style.alignItems = "center";
+        welcomeMessageDiv.style.justifyContent = "space-between";
+    
+        const cancelButton = document.createElement("button");
+        cancelButton.textContent = "✖";
+        cancelButton.style.marginLeft = "10px";
+        cancelButton.style.padding = "5px 10px";
+        cancelButton.style.backgroundColor = "#e74c3c";
+        cancelButton.style.color = "#ffffff";
+        cancelButton.style.border = "none";
+        cancelButton.style.borderRadius = "50%";
+        cancelButton.style.cursor = "pointer";
+        cancelButton.style.fontSize = "14px";
+        cancelButton.style.fontWeight = "bold";
+    
+        welcomeMessageDiv.appendChild(cancelButton);
+    
+        cancelButton.addEventListener("click", () => {
+            document.body.removeChild(welcomeMessageDiv);
+        });
+    
+        document.body.appendChild(welcomeMessageDiv);
+    
+        setTimeout(() => {
+            if (document.body.contains(welcomeMessageDiv)) {
+                document.body.removeChild(welcomeMessageDiv);
+            }
+        }, 90000000);
+    }
+    
+
+
 window.onload = function () {
     document.querySelectorAll(".parent a").forEach(a => {
         const dataValue = a.getAttribute("data-value");
@@ -192,18 +245,43 @@ function toggleSideBox() {
     const sideBox = document.getElementById('side-box');
     if (sideBox.classList.contains('hidden')) {
         sideBox.classList.remove('hidden');
-        setTimeout(() => sideBox.classList.add('active'), 0); // Activate transition
+        setTimeout(() => sideBox.classList.add('active'), 0); 
     } else {
         sideBox.classList.remove('active');
-        setTimeout(() => sideBox.classList.add('hidden'), 300); // Wait for transition before hiding
-    }
+        setTimeout(() => sideBox.classList.add('hidden'), 300); 
+}
 }
 function closeSideBox() {
     const sideBox = document.getElementById('side-box');
     sideBox.classList.remove('active');
     setTimeout(() => sideBox.classList.add('hidden'), 300);
 }
+function showLogoutButton() {
+    const logoutButton = document.createElement("button");
+    logoutButton.textContent = "Logout";
+    logoutButton.style.padding = "10px 20px";
+    logoutButton.style.backgroundColor = "#e74c3c";
+    logoutButton.style.color = "#ffffff";
+    logoutButton.style.border = "none";
+    logoutButton.style.borderRadius = "5px";
+    logoutButton.style.cursor = "pointer";
+    logoutButton.style.marginLeft = "10px";
+console.log("Logout button created");
 
+    const usernameElement = document.getElementById("username-display");
+    usernameElement.appendChild(logoutButton);
+
+    logoutButton.addEventListener("click", () => {
+        logout();
+    });
+}
+
+
+function logout() {
+    localStorage.removeItem('userName');
+    alert("You have been logged out!");
+    window.close(); 
+}
 
 
 /* 

@@ -33,8 +33,8 @@
                         <a class="nav-link" href="#contacts"><span>Contact</span></a>
                     </li>
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link">
-                            <span> <img src="user.jpeg" id="user" alt=""> saiteja</span>
+                        <a class="nav-link" href="#" onclick="showLogoutButton()" id="username-display">
+                            <span> <img src="user.jpeg" id="user" alt=""> <span id="user_name">saiteja</span></span>
                         </a>
                     </li>
                 </ul>
@@ -180,7 +180,7 @@
         </div>
     </div>
 </div>
-<div id="contacts-section">
+<span id="contacts"><div id="contacts-section">
     <footer class="professional-footer">
         <div class="footer-content">
             <div class="contact-row">
@@ -194,14 +194,14 @@
                     <p><strong>Email:</strong> <span>nallapanenisaiteja@gmail.com</span></p>
                     <p><strong>Phone:</strong> <span>+91 9121048098</span></p>
                 </div>
+            </div>
+            <div class="contact-row">
                 <div class="contact-info">
                     <p><strong>Name:</strong> <span>K Jagadeesh</span></p>
                     <p><strong>Email:</strong> <span>kondakajagadeesh@gmail.com</span></p>
                     <p><strong>Phone:</strong> <span>+91 9573725129</span></p>
                 </div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-info-single">
+                <div class="contact-info">
                     <p><strong>Name:</strong> <span>B Venkata Ram</span></p>
                     <p><strong>Email:</strong> <span>banavathvenkataram@gmail.com</span></p>
                     <p><strong>Phone:</strong> <span>+91 9398344795</span></p>
@@ -210,6 +210,7 @@
         </div>
     </footer>
 </div>
+</span>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="project.js"></script>

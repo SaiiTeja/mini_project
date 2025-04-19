@@ -27,12 +27,13 @@ const login = () => {
 
     dictionary = JSON.parse(localStorage.getItem("dictionary")) || {};
     if (dictionary[username] && dictionary[username].password === password) {
+        localStorage.setItem('userName', username);
         msg.innerHTML = "<center>Login successful! Redirecting...</center>";
         msg.classList.add("style2");
     
         setTimeout(() => {
             
-        window.location.href = "main/project.html";
+        window.open("main/project.html", "_blank");
 }, 2000);
     } else if (!dictionary[username]) {
         msg.innerHTML = "<center>Username not found. Please check your input.<center>";
