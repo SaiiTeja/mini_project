@@ -32,7 +32,7 @@ const login = () => {
     
         setTimeout(() => {
             
-        window.location.href = "http://127.0.0.1:5501/project.html";
+        window.location.href = "main/project.html";
 }, 2000);
     } else if (!dictionary[username]) {
         msg.innerHTML = "<center>Username not found. Please check your input.<center>";

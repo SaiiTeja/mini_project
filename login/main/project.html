@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="Font-Awesome-6.x/css/all.min.css">
+   
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2 class="display-3 text-primary sai allign-items-center justify-content-center heading"><img class="img" src="logo.png">Dataverse</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><h2>Dataverse</h2></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home" href="project.html"><span>Home</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showText()"><span>About</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleSideBox()"><span>AI box</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts"><span>Contact</span></a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <a class="nav-link">
+                            <span> <img src="user.jpeg" id="user" alt=""> saiteja</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            
+        </div>
+    </nav>
+    <a id="main_anchpr" class="container">
+    <div class="parent custom-card-container">
+        
+        <a href="#heading" id="iris" data-value="1" class="custom-card">
+            <img src="images\iris.jpeg" alt="Image 1">
+            <h3 class="custom-card-title">Iris Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is ideal for multi-class classification problems with three classes, offering features that distinguish between them effectively.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="digits" data-value="2" class="custom-card">
+            <img src="images\second.jpeg" alt="Image 2">
+            <h3 class="custom-card-title">Written Digit Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is ideal for classifying handwritten digits, offering features tailored to this specific task.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="wine" data-value="3" class="custom-card">
+            <img src="images\third.jpeg" alt="Image 3">
+            <h3 class="custom-card-title">Wine Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is designed for logistic regression, effectively handling multiclass classification tasks.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="news" data-value="4" class="custom-card">
+            <img src="images\fourth.png" alt="Image 4">
+            <h3 class="custom-card-title">20 News Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset contains 20 categories of news articles, making it ideal for building text classification models.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="diabetes" data-value="5" class="custom-card">
+            <img src="images\fifth.jpeg" alt="Image 5">
+            <h3 class="custom-card-title">Diabetes Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is tailored for regression tasks, specifically predicting the progression of diabetes over time.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="house" data-value="6" class="custom-card">
+            <img src="images\sixth.jpg" alt="Image 6">
+            <h3 class="custom-card-title">House Price Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is crafted for predictive analysis, focusing on estimating real estate pricing based on various influencing factors.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="face" data-value="7" class="custom-card">
+            <img src="images\seventh.jpeg" alt="Image 7">
+            <h3 class="custom-card-title">Face Recognition Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is designed for facial recognition, enabling the identification of individuals with high precision.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="forest" data-value="8" class="custom-card">
+            <img src="images\eight.jpg" alt="Image 8">
+            <h3 class="custom-card-title">Forest Cover Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is ideal for predicting forest cover types, supporting robust classification models.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="network" data-value="9" class="custom-card">
+            <img src="images\nine.png" alt="Image 9">
+            <h3 class="custom-card-title">Network Intrusion Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is designed for detecting malicious activity through network traffic analysis.</p>
+            
+        </a>
+    
+        
+        <a href="#heading" id="circle" data-value="10" class="custom-card">
+            <img src="images\ten.png" alt="Image 10">
+            <h3 class="custom-card-title">Circle Dataset</h3>
+            <p class="custom-card-short-content"></p>
+            <p class="custom-card-full-content">This dataset is suited for building advanced models, offering features ideal for tackling non-linear classification tasks.</p>
+            
+        </a>
+    </div>
+</a>
+    <div class="dropdown">
+        <button class="dropbtn">models</button>
+        <div class="parent dropdown-content">
+            <a id="iris" href="#heading" data-value="1">iris dataset</a>
+            <a id="digits" href="#heading" data-value="2">written Digit dataset</a>
+            <a id="wine" href="#heading" data-value="3">wine datasets for logistic regression</a>
+            <a id="news" href="#heading" data-value="4">20 different news for classification</a>
+            <a id="diabates" href="#heading" data-value="5">diabates dataset for regression</a>
+            <a id="house" href="#heading" data-value="6">house price prediction</a>
+            <a id="face" href="#heading" data-value="7">face recognization dataset</a>
+            <a id="forest" href="#heading" data-value="8">classification for forest cover dataset</a>
+            <a id="network" href="#heading" data-value="9">network intrusion dataset</a>
+            <a id="circle" href="#heading" data-value="10">circle dataset for non-linear classification</a>
+        </div>
+    </div>
+    
+<div class="container row" id="main">
+<div class="col-md-3 item design" id="datasets">
+
+</div>
+<div class="col-md-3 item design" id="links">
+    
+</div>
+<div class="col-md-3 item first_item sklearn design" id="boxes">
+    <h3 id="heading"></h3>
+    <div id="code"></div>
+</div>
+</div>
+<div class="container">
+    <div id="side-box" class="side-box hidden">
+        <button class="close-btnn" onclick="closeSideBox()">X</button>
+        <p>
+        <img src="logo.png" alt="Icon" class="box-image"><span class="text-success display-6">AI bot</span></p>
+        <iframe
+        src="https://www.chatbase.co/chatbot-iframe/OfHarSvhYyHsL8w3C08UJ"
+        width="100%"
+        style="height: 100%; min-height: 700px"
+        frameborder="0"
+    ></iframe>
+        <div class="output">
+            
+        </div>
+    </div>
+</div>
+<div id="contacts-section">
+    <footer class="professional-footer">
+        <div class="footer-content">
+            <div class="contact-row">
+                <div class="contact-info">
+                    <p><strong>Name:</strong> <span>B Gopal</span></p>
+                    <p><strong>Email:</strong> <span>bomminenigopal@gmail.com</span></p>
+                    <p><strong>Phone:</strong> <span>+91 7013639633</span></p>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Name:</strong> <span>N Sai Teja</span></p>
+                    <p><strong>Email:</strong> <span>nallapanenisaiteja@gmail.com</span></p>
+                    <p><strong>Phone:</strong> <span>+91 9121048098</span></p>
+                </div>
+                <div class="contact-info">
+                    <p><strong>Name:</strong> <span>K Jagadeesh</span></p>
+                    <p><strong>Email:</strong> <span>kondakajagadeesh@gmail.com</span></p>
+                    <p><strong>Phone:</strong> <span>+91 9573725129</span></p>
+                </div>
+            </div>
+            <div class="contact-row">
+                <div class="contact-info-single">
+                    <p><strong>Name:</strong> <span>B Venkata Ram</span></p>
+                    <p><strong>Email:</strong> <span>banavathvenkataram@gmail.com</span></p>
+                    <p><strong>Phone:</strong> <span>+91 9398344795</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="project.js"></script>
+</body>
+</html>
