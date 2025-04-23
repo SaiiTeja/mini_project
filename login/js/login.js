@@ -33,7 +33,7 @@ const login = () => {
     
         setTimeout(() => {
             
-        window.open("main/project.html", "_blank");
+        window.open("project/project.html", "_blank");
 }, 2000);
     } else if (!dictionary[username]) {
         msg.innerHTML = "<center>Username not found. Please check your input.<center>";
@@ -76,7 +76,7 @@ console.log(question)
         localStorage.setItem("dictionary", JSON.stringify(dictionary));
         msg.innerHTML = `<span style="color:green;">Sign up successful! Your data is saved.</span>`;
     setTimeout(() => {
-        window.location.href = "main.html";
+        window.location.href = "login.html";
     }, 3000);
         
     } else {
