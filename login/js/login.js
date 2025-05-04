@@ -75,9 +75,6 @@ console.log(question)
         };
         localStorage.setItem("dictionary", JSON.stringify(dictionary));
         msg.innerHTML = `<span style="color:green;">Sign up successful! Your data is saved.</span>`;
-    setTimeout(() => {
-        window.location.href = "login.html";
-    }, 3000);
         
     } else {
         msg.innerHTML = `<span style="color:red;">Please enter both username and password.</span>`;
@@ -110,6 +107,7 @@ function recoverPassword() {
 
         if (answer === userData.answer) {
             msg.innerHTML = `<span style="color:green;">Your password is: ${userData.password}</span>`;
+
         } else {
             msg.innerHTML = `<span style="color:red;">Incorrect answer to the security question.</span>`;
         }

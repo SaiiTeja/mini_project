@@ -46,6 +46,7 @@ input {
 }
 
 button {
+    margin-top: 5px;
     width: 100%;
     padding: 10px;
     background: #4CAF50;
