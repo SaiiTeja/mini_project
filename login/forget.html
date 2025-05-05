@@ -13,11 +13,11 @@
         <form id="forgotPasswordForm">
             <div class="form-group">
                 <label for="username">Username:</label>
-                <input type="text" id="username" placeholder="Enter your username">
+                <input type="text" id="username" placeholder="Enter your username" required>
             </div>
             <div id="questionSection" style="display: none;" class="form-group">
                 <label id="questionLabel"></label>
-                <input type="text" id="answer" placeholder="Enter your answer">
+                <input type="text" id="answer" placeholder="Enter your answer" required>
             </div>
             <div id="message"></div>
             <button type="button" onclick="retrieveSecurityQuestion()">Retrieve Security Question</button>

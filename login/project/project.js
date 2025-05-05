@@ -257,7 +257,14 @@ function closeSideBox() {
     setTimeout(() => sideBox.classList.add('hidden'), 300);
 }
 function showLogoutButton() {
+    if(document.getElementById("logout-btn"))
+    {
+        document.getElementById("logout-btn").remove();
+    }
+    else
+    {
     const logoutButton = document.createElement("button");
+    logoutButton.id="logout-btn"
     logoutButton.textContent = "Logout";
     logoutButton.style.padding = "10px 20px";
     logoutButton.style.backgroundColor = "#e74c3c";
@@ -267,13 +274,14 @@ function showLogoutButton() {
     logoutButton.style.cursor = "pointer";
     logoutButton.style.marginLeft = "10px";
 console.log("Logout button created");
-
+    
     const usernameElement = document.getElementById("username-display");
     usernameElement.appendChild(logoutButton);
 
     logoutButton.addEventListener("click", () => {
         logout();
     });
+}
 }
 
 

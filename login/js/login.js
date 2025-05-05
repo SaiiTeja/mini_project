@@ -1,3 +1,11 @@
+
+const first=()=>{
+    window.alert("login to acess the dataverse resources")
+    }
+const second=()=>{
+        window.alert("login to acess the dataverse resources")
+        }
+
 let dictionary = JSON.parse(localStorage.getItem("dictionary")) || {};
 
 document.getElementById("showPassword").addEventListener("change", function() {
@@ -8,6 +16,7 @@ document.getElementById("showPassword").addEventListener("change", function() {
         passwordField.type = "password";
     }
 });
+
 
 const login = () => {
     let username = document.getElementById("username").value;
@@ -47,6 +56,9 @@ const login = () => {
 };
 
 function signup() {
+    const second=()=>{
+        window.alert("login to acess the dataverse resources")
+        }
     const username = document.getElementById("newUsername").value;
     const password = document.getElementById("newPassword").value;
     const question = document.getElementById("question").value;
@@ -117,3 +129,5 @@ function recoverPassword() {
 }
 
 console.log(dictionary);
+
+            

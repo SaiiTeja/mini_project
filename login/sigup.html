@@ -11,20 +11,20 @@
     <nav class="navbar bg-dark text-white">
         <a>Datavere</a>
         <button id="button" class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <a href="index.html" class="btn btn-dark">Home</a>
-            <a href="about.html" class="btn btn-dark">About</a>
-            <a href="contact.html" class="btn btn-dark">Contact</a>
-            <a href="services.html" class="btn btn-dark">Services</a>
-            <a href="products.html" class="btn btn-dark">Products</a>
-            <a href="blog.html" class="btn btn-dark">Blog</a>
+            <a href="#" onclick="second()" class="btn btn-dark">Home</a>
+            <a href="#" onclick="second()" class="btn btn-dark">About</a>
+            <a href="#" onclick="second()" class="btn btn-dark">Contact</a>
+            <a href="#" onclick="second()" class="btn btn-dark">Services</a>
+            <a href="#" onclick="second()" class="btn btn-dark">Products</a>
+            <a href="#" onclick="second()" class="btn btn-dark">Blog</a>
         </button>
     </nav>
     <span>
         <div class="box">
             <center><h2 id="heading2">Sign Up</h2></center>
             <p id="message"></p>
-            <p>Username: <input type="text" placeholder="Enter your username" id="newUsername" size="30" class="sai"></p>
-            <p>Password: <input type="password" placeholder="Enter your password" id="newPassword" size="30"></p>
+            <p>Username: <input type="text" placeholder="Enter your username" id="newUsername" size="30" class="sai" required></p>
+            <p>Password: <input type="password" placeholder="Enter your password" id="newPassword" size="30" required></p>
             <p>
                 security question:- 
                 <select name="" id="question">
@@ -41,10 +41,14 @@
                 </select>
             </p>
             <p>Answer:- <input type="text" name="" id="answer"></p>
-            <center><button id="login" onclick="signup();"><h2>Sign Up</h2></button></center>
+          <p>  <center><button id="login" onclick="signup();"><h2>Sign Up</h2></button> </center><a href="login.html"><button type="button" id="login" >Back to Login</button></a></p>
+            
         </div>
     </span>
-
-    <script src="js/login.js"></script>
+    <script src="js/login.js">
+        const second=()=>{
+            window.alert("login to use dataverse resources")
+        }
+    </script>
 </body>
 </html>
