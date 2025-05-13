@@ -151,7 +151,7 @@
             <a id="circle" href="#heading" data-value="10">circle dataset for non-linear classification</a>
         </div>
     </div>
-    
+ <!--    
 <div class="container row" id="main">
 <div class="col-md-3 item design" id="datasets">
 
@@ -163,7 +163,29 @@
     <h3 id="heading"></h3>
     <div id="code"></div>
 </div>
+</div> -->
+<div class="row">
+<div class="container row" id="main" style="display: flex; flex-wrap: wrap;  padding: 15px;">
+  <!-- Datasets Column -->
+  <div class="col-md-3 item design" id="datasets"
+       style="flex: 1; min-width: 300px; max-height: 500px; overflow-y: auto; border: 1px solid #ccc; padding: 15px; background-color: #fdfdfd;">
+  </div>
+
+  <!-- Links Column -->
+  <div class="col-md-3 item design" id="links"
+       style="flex: 1; min-width: 300px; max-height: 500px; overflow-y: auto; border: 1px solid #ccc; padding: 15px; background-color: #fdfdfd;">
+  </div>
+
+  <!-- Code Box Column -->
+  <div class="col-md-3 item first_item sklearn design" id="boxes"
+       style="flex: 1; min-width: 300px; max-height: 500px; overflow-y: auto; border: 1px solid #ccc; padding: 15px; background-color: #fdfdfd;">
+    <h3 id="heading" style="margin-bottom: 10px;"></h3>
+    <div id="code" style="font-family: monospace; white-space: pre-wrap;"></div>
+  </div>
 </div>
+</div>
+
+
 <div class="container">
     <div id="side-box" class="side-box hidden">
         <button class="close-btnn" onclick="closeSideBox()">X</button>
@@ -180,36 +202,43 @@
         </div>
     </div>
 </div>
-<span id="contacts"><div id="contacts-section">
-    <footer class="professional-footer">
-        <div class="footer-content">
-            <div class="contact-row">
-                <div class="contact-info">
-                    <p><strong>Name:</strong> <span>B Gopal</span></p>
-                    <p><strong>Email:</strong> <span>bomminenigopal@gmail.com</span></p>
-                    <p><strong>Phone:</strong> <span>+91 7013639633</span></p>
-                </div>
-                <div class="contact-info">
-                    <p><strong>Name:</strong> <span>N Sai Teja</span></p>
-                    <p><strong>Email:</strong> <span>nallapanenisaiteja@gmail.com</span></p>
-                    <p><strong>Phone:</strong> <span>+91 9121048098</span></p>
-                </div>
-            </div>
-            <div class="contact-row">
-                <div class="contact-info">
-                    <p><strong>Name:</strong> <span>K Jagadeesh</span></p>
-                    <p><strong>Email:</strong> <span>kondakajagadeesh@gmail.com</span></p>
-                    <p><strong>Phone:</strong> <span>+91 9573725129</span></p>
-                </div>
-                <div class="contact-info">
-                    <p><strong>Name:</strong> <span>B Venkata Ram</span></p>
-                    <p><strong>Email:</strong> <span>banavathvenkataram@gmail.com</span></p>
-                    <p><strong>Phone:</strong> <span>+91 9398344795</span></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</div>
+
+<span id="contacts">
+    <div id="contacts-section">
+        <form>
+            <fieldset>
+                <legend class="contact-title">Contact Us</legend>
+                <footer class="professional-footer">
+                    <div class="footer-content">
+                        <div class="contact-row">
+                            <div class="contact-info">
+                                <p><strong>Name:</strong> <span>B Gopal</span></p>
+                                <p><strong>Email:</strong> <span>bomminenigopal@gmail.com</span></p>
+                                <p><strong>Phone:</strong> <span>+91 7013639633</span></p>
+                            </div>
+                            <div class="contact-info">
+                                <p><strong>Name:</strong> <span>N Sai Teja</span></p>
+                                <p><strong>Email:</strong> <span>nallapanenisaiteja@gmail.com</span></p>
+                                <p><strong>Phone:</strong> <span>+91 9121048098</span></p>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-info">
+                                <p><strong>Name:</strong> <span>K Jagadeesh</span></p>
+                                <p><strong>Email:</strong> <span>kondakajagadeesh@gmail.com</span></p>
+                                <p><strong>Phone:</strong> <span>+91 9573725129</span></p>
+                            </div>
+                            <div class="contact-info">
+                                <p><strong>Name:</strong> <span>B Venkata Ram</span></p>
+                                <p><strong>Email:</strong> <span>banavathvenkataram@gmail.com</span></p>
+                                <p><strong>Phone:</strong> <span>+91 9398344795</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </fieldset>
+        </form>
+    </div>
 </span>
 
 <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
