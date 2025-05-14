@@ -4,6 +4,9 @@
     background-image: linear-gradient(black,blue);
     background-clip: content-box;
 }
+.item{
+    display: none;
+}
 .contact-title {
     font-size: 24px;
     font-weight: bold;
@@ -116,13 +119,13 @@ display: inline;
         width:50%;
       }
       .first_item{
-        margin-left: 3%;
-        padding-left: 3%;
+        margin-left: 1%;
+        padding-left: 1%;
       }
       
       .item {
-        margin-left: 5%;
-        margin-right: 3%;
+        margin-left: 2%;
+        margin-right: 1%;
         width: 300px;
         height: 300px;
       }

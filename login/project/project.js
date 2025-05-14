@@ -1,3 +1,4 @@
+
 const datasets=["iris data sets ","digits datasets","wine datasets","20 Newsgroups Dataset","Diabetes Dataset",
     "Boston Housing Dataset ","Olivetti Faces Dataset","Covtype Dataset ","fetch_kddcup99","make_circles"]
 let dictonary={
@@ -147,13 +148,25 @@ change_name.innerHTML = userName;
     
 
 
+
+
+
+
 window.onload = function () {
     document.querySelectorAll(".parent a").forEach(a => {
         const dataValue = a.getAttribute("data-value");
         a.addEventListener("click", function() {
+            const items = document.querySelectorAll(".item"); // Select all hidden elements
+items.forEach(item => {
+    item.style.display = "inline"; // Restoring inline layout
+});
             load_datasets(datasets[dataValue-1], dataValue,dictonary[dataValue]);
             let head=document.getElementById("heading");
-head.innerHTML="python program using predefined modules";
+
+
+   
+head.innerHTML=`python program using predefined modules<br><fieldset style="float: right; width: 300px; text-align: right;">
+<p>copy the code here<a class="btn fa-solid fa-copy text-dark href="#" onclick="copycode()"></a></p></fieldset>`;
             let box1=document.getElementById("datasets")
             let box2=document.getElementById("links")
             let box3=document.getElementById("boxes")
@@ -167,6 +180,11 @@ head.innerHTML="python program using predefined modules";
     });
 };
 
+
+ function copycode() {
+      navigator.clipboard.writeText(document.getElementById("code").innerText);
+      alert("Code copied to clipboard");
+    }
 
 function showText() {
     if (document.getElementById("slideText")) return;
@@ -227,7 +245,7 @@ model=RandomForestClassifier()
 </p>`;
     
         
-    url.innerHTML=`<p><b>File1:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${value}.csv">https://raw.githubusercontent.com/SaiiTeja/
+    url.innerHTML=`<p><h3>Links for datasets</h3> <br><b>File1:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${value}.csv">https://raw.githubusercontent.com/SaiiTeja/
     <br>mini_project/refs/heads/master/datasets/${value}.csv</a>
     <p><b>File2:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy2(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${value}.5.csv">https://raw.githubusercontent.com/SaiiTeja/
     <br>mini_project/refs/heads/master/datasets/${value}.5.csv<br></a>
