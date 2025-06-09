@@ -216,13 +216,13 @@ function hideText() {
     }
 }
 function copy(num){
-    navigator.clipboard.writeText(`https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${num}.csv`).then(()=>{
+    navigator.clipboard.writeText(`https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/login/project/datasets/${num}.csv`).then(()=>{
         alert("Copied to clipboard");
     })
 }
 
 function copy2(num){
-    navigator.clipboard.writeText(`https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${num}.5.csv`).then(()=>{
+    navigator.clipboard.writeText(`https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/login/project/datasets/${num}.5.csv`).then(()=>{
         alert("Copied to clipboard");
     })
 }
@@ -245,13 +245,11 @@ model=RandomForestClassifier()
 </p>`;
     
         
-    url.innerHTML=`<p><h3>Links for datasets</h3> <br><b>File1:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${value}.csv">https://raw.githubusercontent.com/SaiiTeja/
-    <br>mini_project/refs/heads/master/datasets/${value}.csv</a>
-    <p><b>File2:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy2(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/datasets/${value}.5.csv">https://raw.githubusercontent.com/SaiiTeja/
-    <br>mini_project/refs/heads/master/datasets/${value}.5.csv<br></a>
+    url.innerHTML=`<p><h3>Links for datasets</h3> <br><b>File1:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/login/project/datasets/${value}.csv">https://raw.githubusercontent.com/SaiiTeja/<br>mini_project/refs/heads/master/login/project/datasets/${value}.csv</a>
+    <p><b>File2:-</b></p><a class="btn fa-solid fa-copy text-dark href="" onclick="copy2(${value})"><a href="https://raw.githubusercontent.com/SaiiTeja/mini_project/refs/heads/master/login/project/datasets/${value}.5.csv">https://raw.githubusercontent.com/SaiiTeja/<br>mini_project/refs/heads/master/login/project/datasets/${value}.5.csv<br></a>
    <br> <h6>how to implement in python</h6>
     <p>import pandas as pd<br>  
-url = "https://raw.githubusercontent.com/SaiiTeja/<br>mini_project/refs/heads/master/datasets/1.csv"<br>
+url = "https://raw.githubusercontent.com/SaiiTeja/<br>mini_project/refs/heads/master/login/project/datasets/1.csv"<br>
 df = pd.read_csv(url)<br>
 print(df.head())</p>`;
 
