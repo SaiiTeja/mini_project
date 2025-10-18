@@ -29,6 +29,7 @@ nav.navbar {
     width: 40%;
 }
 
+
 h2#heading1 {
     color: #333;
 }
@@ -40,7 +41,7 @@ h2#heading1 {
 }
 
 #login {
-    background-color: #4caf50;
+    background-color: #058ef8;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
